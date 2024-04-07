@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>earthGuardians</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .img-crousel {
+        width: 100%;
+        height: 92vh;
+    }
+
+    .bloggers-card {
+        width: 140px;
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 1000px;
+        margin-bottom: 2rem;
+    }
+
+    .img-mainCard{
+        width: 25rem;
+        height: 25rem;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">earthGuardians</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse NAVBAR" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dailyBlogs.html">Daily Blogs</a></li>
+                            <li><a class="dropdown-item" href="#">Trending</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success mx-5" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Login/Sign Up
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form style="user-select: auto;">
+                                    <img class="mb-4"
+                                        src="https://natureinmind.ie/wp-content/uploads/2016/12/nature-inmind.png"
+                                        alt="" width="172" height="97" style="user-select: auto;">
+                                    <h1 class="h3 mb-3 fw-normal" style="user-select: auto;">Please sign in</h1>
+
+                                    <div class="form-floating" style="user-select: auto;">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com" style="user-select: auto;">
+                                        <label for="floatingInput" style="user-select: auto;">Email address</label>
+                                    </div>
+                                    <div class="form-floating" style="user-select: auto;">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password" style="user-select: auto;">
+                                        <label for="floatingPassword" style="user-select: auto;">Password</label>
+                                    </div>
+
+                                    <div class="form-check text-start my-3" style="user-select: auto;">
+                                        <input class="form-check-input" type="checkbox" value="remember-me"
+                                            id="flexCheckDefault" style="user-select: auto;">
+                                        <label class="form-check-label" for="flexCheckDefault"
+                                            style="user-select: auto;">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-primary w-100 py-2" type="submit"
+                                        style="user-select: auto;">Sign in</button>
+                                    <p class="mt-5 mb-3 text-body-secondary" style="user-select: auto;">© 2017–2024</p>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main style="user-select: auto;">
+
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="user-select: auto;">
+            <div class="carousel-indicators" style="user-select: auto;">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" style="user-select: auto;" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""
+                    style="user-select: auto;"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""
+                    style="user-select: auto;"></button>
+            </div>
+            <div class="carousel-inner" style="user-select: auto;">
+                <div class="carousel-item active" style="user-select: auto;">
+                    <img src="img/e1.jpg" class="img-crousel" alt="">
+                    <div class="container" style="user-select: auto;">
+                        <div class="carousel-caption text-start" style="user-select: auto;">
+                            <h1 style="user-select: auto;">Daily Blogs</h1>
+                            <p class="opacity-75" style="user-select: auto;">Know about your nature by experts around
+                                you </p>
+                                <button type="button" class="btn btn-primary mx-5" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Sign Up Today
+                            </button>
+            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form style="user-select: auto;">
+                                                <img class="mb-4"
+                                                    src="https://natureinmind.ie/wp-content/uploads/2016/12/nature-inmind.png"
+                                                    alt="" width="172" height="97" style="user-select: auto;">
+                                                <h1 class="h3 mb-3 fw-normal" style="user-select: auto;">Please sign in</h1>
+            
+                                                <div class="form-floating" style="user-select: auto;">
+                                                    <input type="email" class="form-control" id="floatingInput"
+                                                        placeholder="name@example.com" style="user-select: auto;">
+                                                    <label for="floatingInput" style="user-select: auto;">Email address</label>
+                                                </div>
+                                                <div class="form-floating" style="user-select: auto;">
+                                                    <input type="password" class="form-control" id="floatingPassword"
+                                                        placeholder="Password" style="user-select: auto;">
+                                                    <label for="floatingPassword" style="user-select: auto;">Password</label>
+                                                </div>
+            
+                                                <div class="form-check text-start my-3" style="user-select: auto;">
+                                                    <input class="form-check-input" type="checkbox" value="remember-me"
+                                                        id="flexCheckDefault" style="user-select: auto;">
+                                                    <label class="form-check-label" for="flexCheckDefault"
+                                                        style="user-select: auto;">
+                                                        Remember me
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-primary w-100 py-2" type="submit"
+                                                    style="user-select: auto;">Sign in</button>
+                                                <p class="mt-5 mb-3 text-body-secondary" style="user-select: auto;">© 2017–2024</p>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="user-select: auto;">
+                    <img class="img-crousel" src="img/e2.jpg" alt="">
+                    <div class="container" style="user-select: auto;">
+                        <div class="carousel-caption" style="user-select: auto;">
+                            <h1 style="user-select: auto;">Trending Blogs Here...</h1>
+                            <p style="user-select: auto;">Blogs posted regulary which are in Trending about Nature</p>
+                            <p style="user-select: auto;"><a class="btn btn-lg btn-primary" href="about.html"
+                                    style="user-select: auto;">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="user-select: auto;">
+                    <img src="img/e3.jpg" class="img-crousel" alt="">
+                    <div class="container" style="user-select: auto;">
+                        <div class="carousel-caption text-end" style="user-select: auto;">
+                            <h1 style="user-select: auto;">A step towards Nature</h1>
+                            <p style="user-select: auto;"> A earthGuardians initiative..</p>
+                            <p style="user-select: auto;"><a class="btn btn-lg btn-primary" href="#"
+                                    style="user-select: auto;">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
+                style="user-select: auto;">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="user-select: auto;"></span>
+                <span class="visually-hidden" style="user-select: auto;">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"
+                style="user-select: auto;">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="user-select: auto;"></span>
+                <span class="visually-hidden" style="user-select: auto;">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing" style="user-select: auto;">
+
+        <!-- Three columns of text below the carousel -->
+            <div class="row my-5" style="user-select: auto;">
+                <div class="col-lg-4" style="user-select: auto;">
+                    <img src="img/profile_pic.jpg" class="bloggers-card" alt="">
+                    <h2 class="fw-normal" style="user-select: auto;">Abhay Rawat</h2>
+                    <p style="user-select: auto;">Hey Guys!! My new blogs is posted on <a href="index.html">earthGuardians.com</a>. Access to it by clicking below...</p>
+                    <p style="user-select: auto;"><a class="btn btn-secondary" href="blog1.html" style="user-select: auto;">View
+                            details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4" style="user-select: auto;">
+                    <img src="img/DisplayImageForPowerBi.gif" class="bloggers-card" alt="">
+                    <h2 class="fw-normal" style="user-select: auto;">Anchal Malik</h2>
+                    <p style="user-select: auto;">Hey Guys!! My new blogs is posted on <a href="index.html">earthGuardians.com</a>. Access to it by clicking below...</p>
+                    <p style="user-select: auto;"><a class="btn btn-secondary" href="#" style="user-select: auto;">View
+                            details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4" style="user-select: auto;">
+                    <img src="img/DisplayImageForPowerBi (1).gif" class="bloggers-card" alt="">
+                    <h2 class="fw-normal" style="user-select: auto;">Jaivardhan Singh Rathore</h2>
+                    <p style="user-select: auto;">Hey Guys!! My new blogs is posted on <a href="index.html">earthGuardians.com</a>. Access to it by clicking below...</p>
+                    <p style="user-select: auto;"><a class="btn btn-secondary" href="#" style="user-select: auto;">View
+                            details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider" style="user-select: auto;">
+
+            <div class="row featurette" style="user-select: auto;">
+                <div class="col-md-7" style="user-select: auto;">
+                    <h2 class="featurette-heading fw-normal lh-1" style="user-select: auto;">"Look deep into nature, and then you will understand everything better" 
+                        <span class="text-body-secondary" style="user-select: auto;">advised Albert Einstein. </span></h2>
+                    <p class="lead my-5" style="user-select: auto;">In every walk with nature, one receives far more than he seeks." These timeless words highlight the profound connection between humanity and the natural world, urging us to seek solace and wisdom in nature's embrace. Ralph Waldo Emerson praised nature's tranquility, advising, "Adopt the pace of nature: her secret is patience." These timeless sayings remind us to cherish nature's beauty, seek solace in its serenity, and embrace its teachings. In the embrace of nature, we find not only peace but also a deeper understanding of ourselves and the world around us.</p>
+                </div>
+                <div class="col-md-5" style="user-select: auto;">
+                    <img src="img/about_crousel1.jpg" class="img-mainCard" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="user-select: auto;">
+
+            <div class="row featurette" style="user-select: auto;">
+                <div class="col-md-7 order-md-2" style="user-select: auto;">
+                    <h2 class="featurette-heading fw-normal lh-1" style="user-select: auto;">"Adopt the pace of nature: her secret is patience,"
+                        <span class="text-body-secondary" style="user-select: auto;">advised Ralph Waldo Emerson</span></h2>
+                    <p class="lead my-5" style="user-select: auto;">Capturing the essence of nature's timeless teachings. Isaac Newton extolled nature's preference for simplicity, while Jane Austen found perfect refreshment in the shade of verdant landscapes. These diverse perspectives reflect humanity's enduring fascination with and reverence for the natural world. The earth has music for those who listen," proclaimed William Shakespeare, celebrating the symphony of nature. John Keats immortalized the everlasting poetry of the earth, emphasizing its eternal beauty. Through these voices, we're reminded of nature's profound ability to inspire, heal, and guide us on our journey through life's ever-changing landscapes.</p>
+                </div>
+                <div class="col-md-5 order-md-1" style="user-select: auto;">
+                    <img src="img/about_crousel1.jpg" class="img-mainCard" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="user-select: auto;">
+
+            <div class="row featurette" style="user-select: auto;">
+                <div class="col-md-7" style="user-select: auto;">
+                    <h2 class="featurette-heading fw-normal lh-1" style="user-select: auto;">
+                        "Nature always wears the colors of the spirit,"<span
+                            class="text-body-secondary" style="user-select: auto;">declared Ralph Waldo Emerson</span></h2>
+                    <p class="lead my-5" style="user-select: auto;">Recognizing the deep connection between inner emotions and the outer world. John Muir's call to heed the mountains' beckoning reminds us of nature's irresistible allure and the inherent wisdom found in its vast expanse. Together, these voices echo the sentiment that nature is not just a backdrop but a profound teacher and source of solace in life's journey. The clearest way into the Universe is through a forest wilderness," articulated John Muir, highlighting nature's capacity to unveil the mysteries of existence. Albert Einstein's counsel to immerse oneself in nature underscores its role as a gateway to understanding. Together, they inspire us to explore, appreciate, and learn from the boundless wonders of the natural world.</p>
+                </div>
+                <div class="col-md-5" style="user-select: auto;">
+                    <img src="img/about_crousel1.jpg" class="img-mainCard" alt="">
+                </div>
+            </div>
+
+            <hr class="featurette-divider" style="user-select: auto;">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+    </main>
+
+
+    <hr>
+    <footer class="p-5 py-5" style="user-select: auto;">
+        <div class="row" style="user-select: auto;">
+            <div class="col-6 col-md-2 mb-3" style="user-select: auto;">
+                <h5 style="user-select: auto;">Section</h5>
+                <ul class="nav flex-column" style="user-select: auto;">
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Home</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Features</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Pricing</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">FAQs</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3" style="user-select: auto;">
+                <h5 style="user-select: auto;">Section</h5>
+                <ul class="nav flex-column" style="user-select: auto;">
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Home</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Features</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Pricing</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">FAQs</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3" style="user-select: auto;">
+                <h5 style="user-select: auto;">Section</h5>
+                <ul class="nav flex-column" style="user-select: auto;">
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Home</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Features</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">Pricing</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">FAQs</a></li>
+                    <li class="nav-item mb-2" style="user-select: auto;"><a href="#"
+                            class="nav-link p-0 text-body-secondary" style="user-select: auto;">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3" style="user-select: auto;">
+                <form style="user-select: auto;">
+                    <h5 style="user-select: auto;">Subscribe to our newsletter</h5>
+                    <p style="user-select: auto;">Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2" style="user-select: auto;">
+                        <label for="newsletter1" class="visually-hidden" style="user-select: auto;">Email
+                            address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                            style="user-select: auto;">
+                        <button class="btn btn-primary" type="button" style="user-select: auto;">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+            style="user-select: auto;">
+            <p style="user-select: auto;">© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex" style="user-select: auto;">
+                <li class="ms-3" style="user-select: auto;"><a class="link-body-emphasis" href="#"
+                        style="user-select: auto;"><svg class="bi" width="24" height="24" style="user-select: auto;">
+                            <use xlink:href="#twitter" style="user-select: auto;"></use>
+                        </svg></a></li>
+                <li class="ms-3" style="user-select: auto;"><a class="link-body-emphasis" href="#"
+                        style="user-select: auto;"><svg class="bi" width="24" height="24" style="user-select: auto;">
+                            <use xlink:href="#instagram" style="user-select: auto;"></use>
+                        </svg></a></li>
+                <li class="ms-3" style="user-select: auto;"><a class="link-body-emphasis" href="#"
+                        style="user-select: auto;"><svg class="bi" width="24" height="24" style="user-select: auto;">
+                            <use xlink:href="#facebook" style="user-select: auto;"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+        <p><b>Project made by Abhay, Jaivardhan, Anchal</b></p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
